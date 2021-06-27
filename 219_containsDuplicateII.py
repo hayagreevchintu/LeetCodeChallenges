@@ -3,6 +3,6 @@ class Solution:
         dictionary = dict()
         for index, val in enumerate(nums):
             if val in dictionary and abs(index - dictionary[val]) <= k:
-                return True
+                return 'true'
             dictionary[val] = index
-        return False
+        return 'false'
